@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">Responsive Image Gallery</h1>
+
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('monument')">Monuments</button>
+  </div>
+
+<div class="gallery">
+
+  <img src="https://picsum.photos/seed/india1/600/400" data-category="nature">
+  <img src="https://picsum.photos/seed/india2/600/400" data-category="city">
+  <img src="https://picsum.photos/seed/india3/600/400" data-category="monument">
+  <img src="https://picsum.photos/seed/india4/600/400" data-category="nature">
+  <img src="https://picsum.photos/seed/india5/600/400" data-category="city">
+  <img src="https://picsum.photos/seed/india6/600/400" data-category="monument">
+
+</div>
+
+
+  <div id="lightbox" class="lightbox">
+    <img id="lightboxImg">
+    <div class="lightbox-buttons">
+      <button onclick="prevImg()">Prev</button>
+      <button onclick="nextImg()">Next</button>
+      <button onclick="closeLightbox()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
